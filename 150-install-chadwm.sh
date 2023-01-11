@@ -61,7 +61,7 @@ func_install_chadwm() {
     echo
 
     list=(
-    alacritty
+    #alacritty
     archlinux-logout-git
     edu-chadwm-git
     edu-skel-git

@@ -56,6 +56,8 @@ fi
 sudo pacman -Rs xf86-video-ati --noconfirm
 sudo pacman -Rs xf86-video-nouveau --noconfirm
 sudo pacman -Rs xf86-video-vesa --noconfirm
+sudo pacman -Rs --noconfirm alacritty
+sudo pacman -Rs --noconfirm firefox
 
 # when on Arch Linux - remove conflicting files
 

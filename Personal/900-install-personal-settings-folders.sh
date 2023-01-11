@@ -86,7 +86,7 @@ echo
 [ -d $HOME"/.config" ] || mkdir -p $HOME"/.config"
 [ -d $HOME"/.config/fish" ] || mkdir -p $HOME"/.config/fish"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
-[ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
+#[ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
 echo
 tput setaf 2
 echo "################################################################"
@@ -97,9 +97,9 @@ echo
 echo "Installing all shell files"
 echo
 cp $installed_dir/settings/shell-personal/.bashrc-personal ~/.bashrc-personal
-cp $installed_dir/settings/shell-personal/.zshrc ~/.zshrc
-sudo cp $installed_dir/settings/shell-personal/.zshrc /etc/skel/.zshrc
-cp $installed_dir/settings/shell-personal/.zshrc-personal ~/.zshrc-personal
+#cp $installed_dir/settings/shell-personal/.zshrc ~/.zshrc
+#sudo cp $installed_dir/settings/shell-personal/.zshrc /etc/skel/.zshrc
+#cp $installed_dir/settings/shell-personal/.zshrc-personal ~/.zshrc-personal
 cp $installed_dir/settings/fish/alias.fish ~/.config/fish/alias.fish
 echo
 echo "Installing personal settings of variety"
@@ -107,10 +107,10 @@ echo
 [ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
 cp $installed_dir/settings/variety/variety.conf ~/.config/variety/
 sudo cp $installed_dir/settings/variety/variety.conf /etc/skel/.config/variety/
-echo
-echo "Installing screenkey for teaching"
-echo
-cp $installed_dir/settings/screenkey/screenkey.json ~/.config/
+#echo
+#echo "Installing screenkey for teaching"
+#echo
+#cp $installed_dir/settings/screenkey/screenkey.json ~/.config/
 echo
 echo "Adding personal looks to /personal"
 echo
