@@ -208,7 +208,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/Internxt">
-  <title>Insync</title>
+  <title>Internxt</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="folder"/>
@@ -221,7 +221,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/Development">
-  <title>ARCOLINUX</title>
+  <title>Development</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="folder"/>
@@ -234,7 +234,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/Development/Projects">
-  <title>ARCOLINUXD</title>
+  <title>Projects</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="folder"/>
@@ -247,7 +247,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/Development/Projects/College Projects">
-  <title>ARCOLINUXB</title>
+  <title>College Projects</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="folder"/>
@@ -260,7 +260,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/VirtualMachines">
-  <title>ARCOLINUX-CAL</title>
+  <title>VirtualMachines</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="inode-directory"/>
@@ -273,7 +273,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/Courses">
-  <title>ARCOLINUX-CONFIG</title>
+  <title>Courses</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="inode-directory"/>
@@ -286,7 +286,7 @@
   </info>
  </bookmark>
  <bookmark href="file:///home/jonathan/Clients">
-  <title>ARCOLINUX-DCONF</title>
+  <title>Clients</title>
   <info>
    <metadata owner="http://freedesktop.org">
     <bookmark:icon name="inode-directory"/>

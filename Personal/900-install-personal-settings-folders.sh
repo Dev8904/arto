@@ -86,7 +86,14 @@ echo
 [ -d $HOME"/.config" ] || mkdir -p $HOME"/.config"
 [ -d $HOME"/.config/fish" ] || mkdir -p $HOME"/.config/fish"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
-#[ -d $HOME"/Insync" ] || mkdir -p $HOME"/Insync"
+[ -d $HOME"/jonathan/Development" ] || mkdir -p $HOME"/jonathan//Development"
+[ -d $HOME"/jonathan/Development/Projects" ] || mkdir -p $HOME"/jonathan/Development/Projects"
+[ -d $HOME"/jonathan/VirtualMachines" ] || mkdir -p $HOME"/jonathan/VirtualMachines"
+[ -d $HOME"/jonathan/Courses" ] || mkdir -p $HOME"/jonathan/Courses"
+[ -d $HOME"/jonathan/Clients" ] || mkdir -p $HOME"/jonathan/Clients"
+[ -d $HOME"/jonathan/Development/Projects/College Projects" ] || mkdir -p $HOME"/jonathan/Development/Projects/College Projects"
+#[ -d $HOME"/jonathan/Internxt" ] || mkdir -p $HOME"/jonathan/Internxt"
+
 echo
 tput setaf 2
 echo "################################################################"
