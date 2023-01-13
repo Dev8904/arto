@@ -101,7 +101,7 @@ echo
 [ -d $HOME"/Courses" ] || mkdir -p $HOME"/Courses"
 [ -d $HOME"/Clients" ] || mkdir -p $HOME"/Clients"
 [ -d $HOME"/Development/Projects/College Projects" ] || mkdir -p $HOME"/Development/Projects/College"
-#[ -d $HOME"/jonathan/Internxt" ] || mkdir -p $HOME"/jonathan/Internxt"
+[ -d $HOME"/Internxt" ] || mkdir -p $HOME"/Internxt"
 
 echo
 tput setaf 2

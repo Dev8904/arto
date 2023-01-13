@@ -60,6 +60,13 @@ sudo pacman -Rs --noconfirm awesome-terminal-fonts
 sudo pacman -Rs --noconfirm vivaldi
 sudo pacman -Rs --noconfirm urxvt-perls
 sudo pacman -Rs --noconfirm urxvt-resize-font-git
+sudo pacman -Rs --noconfirm gitahead
+sudo pacman -Rs --noconfirm plank
+sudo pacman -Rs --noconfirm xcolor
+sudo pacman -Rs --noconfirm peek
+sudo pacman -Rs --noconfirm inkscape
+sudo pacman -Rs --noconfirm risetretto
+
 
 # when on Arch Linux - remove conflicting files
 
