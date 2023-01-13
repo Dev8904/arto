@@ -66,6 +66,40 @@ sudo pacman -Rs --noconfirm xcolor
 sudo pacman -Rs --noconfirm peek
 sudo pacman -Rs --noconfirm inkscape
 sudo pacman -Rs --noconfirm risetretto
+sudo pacman -Rs --noconfirm arduino
+sudo pacman -Rs --noconfirm bluefish
+sudo pacman -Rs --noconfirm arduino
+sudo pacman -Rs --noconfirm brackets-bin
+sudo pacman -Rs --noconfirm codeblocks
+sudo pacman -Rs --noconfirm cuttlefish
+sudo pacman -Rs --noconfirm emacs
+sudo pacman -Rs --noconfirm geany
+sudo pacman -Rs --noconfirm kate
+sudo pacman -Rs --noconfirm pycharm-community-edition
+sudo pacman -Rs --noconfirm qtcreator
+sudo pacman -Rs --noconfirm okular
+sudo pacman -Rs --noconfirm openscad
+sudo pacman -Rs --noconfirm avahi
+sudo pacman -Rs --noconfirm element-desktop
+sudo pacman -Rs --noconfirm element-web
+sudo pacman -Rs --noconfirm google-chat-linux-bin 
+sudo pacman -Rs --noconfirm hexchat
+sudo pacman -Rs --noconfirm teams
+sudo pacman -Rs --noconfirm skypeforlinux-stable-bin
+sudo pacman -Rs --noconfirm arcolinux-teamviewer
+sudo pacman -Rs --noconfirm spotify
+sudo pacman -Rs --noconfirm atril
+sudo pacman -Rs --noconfirm epdfview
+sudo pacman -Rs --noconfirm pdfarranger
+sudo pacman -Rs --noconfirm xpdf 
+sudo pacman -Rs --noconfirm file-roller
+sudo pacman -Rs --noconfirm xreader
+sudo pacman -Rs --noconfirm ibus-ui-emojier-plasma
+sudo pacman -Rs --noconfirm kwrite
+sudo pacman -Rs --noconfirm leafpad
+sudo pacman -Rs --noconfirm spectacle 
+sudo pacman -Rs --noconfirm vim
+sudo pacman -Rs --noconfirm codium
 
 
 # when on Arch Linux - remove conflicting files
