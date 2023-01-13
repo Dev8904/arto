@@ -58,6 +58,8 @@ sudo pacman -Rs xf86-video-nouveau --noconfirm
 sudo pacman -Rs xf86-video-vesa --noconfirm
 sudo pacman -Rs --noconfirm awesome-terminal-fonts
 sudo pacman -Rs --noconfirm vivaldi
+sudo pacman -Rs --noconfirm urxvt-perls
+sudo pacman -Rs --noconfirm urxvt-resize-font-git
 
 # when on Arch Linux - remove conflicting files
 

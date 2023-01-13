@@ -94,6 +94,7 @@ sudo pacman -S --noconfirm --needed expac
 #sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
+yay -S --noconfirm --needed firefox-extension-bitwarden
 sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed flameshot-git
 #sudo pacman -S --noconfirm --needed fluent-icon-theme-git

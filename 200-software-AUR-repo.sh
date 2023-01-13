@@ -69,6 +69,18 @@ else
 
 fi
 
+echo
+tput setaf 2
+echo "################################################################"
+echo "################### Installing Internxt & Pulse Audio"
+echo "################################################################"
+tput sgr0
+echo
+
+sh AUR/install-internxt*
+sh AUR/install-pulseaudio*
+
+
 # these come last always
 echo "Checking if icons from applications have a hardcoded path"
 echo "and fixing them"

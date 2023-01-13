@@ -48,7 +48,15 @@ echo "To default xfce settings"
 echo
 [ -d $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/" ] || mkdir -p $HOME"/.config/xfce4/xfconf/xfce-perchannel-xml/"
 cp  $installed_dir/settings/xfce/xsettings.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
+cp  $installed_dir/settings/xfce/xfce4-panel.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
+cp  $installed_dir/settings/xfce/pointers.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
+cp  $installed_dir/settings/xfce/displays.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
+cp  $installed_dir/settings/xfce/xfce4-keyboard-shortcuts.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml
+sudo cp  $installed_dir/settings/xfce/xfce4-keyboard-shortcuts.xml/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo cp  $installed_dir/settings/xfce/xsettings.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+sudo cp  $installed_dir/settings/xfce/xfce4-panel.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+sudo cp  $installed_dir/settings/xfce/pointers.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+sudo cp  $installed_dir/settings/xfce/displays.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 echo
 echo "To default gtk-3.0 config"
 echo
@@ -66,6 +74,7 @@ echo "Adding xorg xkill"
 echo
 [ -d /etc/X11/xorg.conf.d/ ] || mkdir -p /etc/X11/xorg.conf.d/
 sudo cp  settings/xorg/* /etc/X11/xorg.conf.d/
+sudo cp  $installed_dir/settings/alacritty/alacritty.yml* $HOME/.config/alacritty/alacritty.yml
 echo
 tput setaf 2
 echo "################################################################"
@@ -86,12 +95,12 @@ echo
 [ -d $HOME"/.config" ] || mkdir -p $HOME"/.config"
 [ -d $HOME"/.config/fish" ] || mkdir -p $HOME"/.config/fish"
 [ -d $HOME"/DATA" ] || mkdir -p $HOME"/DATA"
-[ -d $HOME"/jonathan/Development" ] || mkdir -p $HOME"/jonathan//Development"
-[ -d $HOME"/jonathan/Development/Projects" ] || mkdir -p $HOME"/jonathan/Development/Projects"
-[ -d $HOME"/jonathan/VirtualMachines" ] || mkdir -p $HOME"/jonathan/VirtualMachines"
-[ -d $HOME"/jonathan/Courses" ] || mkdir -p $HOME"/jonathan/Courses"
-[ -d $HOME"/jonathan/Clients" ] || mkdir -p $HOME"/jonathan/Clients"
-[ -d $HOME"/jonathan/Development/Projects/College Projects" ] || mkdir -p $HOME"/jonathan/Development/Projects/College Projects"
+[ -d $HOME"/Development" ] || mkdir -p $HOME"/Development"
+[ -d $HOME"/Development/Projects" ] || mkdir -p $HOME"/Development/Projects"
+[ -d $HOME"/VirtualMachines" ] || mkdir -p $HOME"/VirtualMachines"
+[ -d $HOME"/Courses" ] || mkdir -p $HOME"/Courses"
+[ -d $HOME"/Clients" ] || mkdir -p $HOME"/Clients"
+[ -d $HOME"/Development/Projects/College Projects" ] || mkdir -p $HOME"/Development/Projects/College"
 #[ -d $HOME"/jonathan/Internxt" ] || mkdir -p $HOME"/jonathan/Internxt"
 
 echo
@@ -108,6 +117,7 @@ cp $installed_dir/settings/shell-personal/.bashrc-personal ~/.bashrc-personal
 #sudo cp $installed_dir/settings/shell-personal/.zshrc /etc/skel/.zshrc
 #cp $installed_dir/settings/shell-personal/.zshrc-personal ~/.zshrc-personal
 cp $installed_dir/settings/fish/alias.fish ~/.config/fish/alias.fish
+cp $installed_dir/settings/fish/config.fish ~/.config/fish/config.fish
 echo
 echo "Installing personal settings of variety"
 echo
