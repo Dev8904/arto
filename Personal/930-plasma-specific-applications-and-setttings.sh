@@ -41,7 +41,7 @@ if [ -f /usr/bin/startplasma-x11 ]; then
 	echo "################################################################"
 	tput sgr0
 	echo
-
+	sudo pacman -S --noconfirm --needed pipewire
 	echo
 	tput setaf 2
 	echo "################################################################"
@@ -59,4 +59,16 @@ if [ -f /usr/bin/startplasma-x11 ]; then
 	echo "################################################################"
 	tput sgr0
 
+	tput setaf 2
+	echo "################################################################"
+	echo "################### Personal settings"
+	echo "################################################################"
+	tput sgr0
+	cp $installed_dir/settings/plasma/kdedefaults/kcminputrc ~/.config/kdedefaults/kcminputrc
+	cp $installed_dir/settings/plasma/kdedefaults/kdeglobals ~/.config/kdedefaults/kdeglobals
+	cp $installed_dir/settings/plasma/kdedefaults/kwinrc ~/.config/kdedefaults/kwinrc
+	cp $installed_dir/settings/plasma/kdedefaults/package ~/.config/kdedefaults/package
+	cp $installed_dir/settings/plasma/kdedefaults/plasmarc ~/.config/kdedefaults/plasmarc
+	cp $installed_dir/settings/plasma/kdeglobalshortcutsrc ~/.config/kdeglobalshortcutsrc
+	cp $installed_dir/settings/plasma/plasmashellrc ~/.config/plasmashellrc
 fi
