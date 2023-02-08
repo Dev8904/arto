@@ -108,5 +108,9 @@ if grep -q "archlinux" /etc/os-release; then
 	tput sgr0
 	echo
 
+else
+
+echo "nothing to do"
+
 fi
 

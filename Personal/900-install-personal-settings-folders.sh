@@ -52,14 +52,15 @@ echo "################################################################"
 
 [ -d $HOME"/.config/arco-chadwm" ] || mkdir -p $HOME"/.config/arco-chadwm"
 
-sudo cp  $installed_dir/settings/chadwm/sxhkd/sxhkdrc $HOME/.config/arco-chadwm/sxhkd/
-sudo cp  $installed_dir/settings/chadwm/scripts/run.sh $HOME/.config/arco-chadwm/scripts/
-sudo cp  $installed_dir/settings/chadwm/scripts/bar.sh $HOME/.config/arco-chadwm/scripts/
-sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson $HOME/.config/arco-chadwm/scripts/bar_themes
-sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h $HOME/.config/arco-chadwm/chadwm/
-sudo cp  $installed_dir/settings/chadwm/chadwm/themes/crimson.h $HOME/.config/arco-chadwm/chadwm/themes/
+sudo cp  $installed_dir/settings/chadwm/sxhkd/sxhkdrc /etc/skel/.config/arco-chadwm/sxhkd/
+sudo cp  $installed_dir/settings/chadwm/scripts/run.sh /etc/skel/.config/arco-chadwm/scripts/
+sudo cp  $installed_dir/settings/chadwm/scripts/bar.sh /etc/skel/.config/arco-chadwm/scripts/
+sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson /etc/skel/.config/arco-chadwm/scripts/bar_themes
+sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h /etc/skel/.config/arco-chadwm/chadwm/
+sudo cp  $installed_dir/settings/chadwm/chadwm/themes/crimson.h /etc/skel/.config/arco-chadwm/chadwm/themes/
 
-cd ~/.config/arco-chadwm/chadwm
+rm /etc/skel/config/arco-chadwm/chadwm/config.h
+cd /etc/skel/.config/arco-chadwm/chadwm
 make
 sudo make install
 cd

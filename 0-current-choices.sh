@@ -45,7 +45,7 @@ echo "################################################################"
 tput sgr0
 echo
 
-sudo pacman -Sy
+#sudo pacman -Syyu
 
 sh 400-remove-software*
 
@@ -55,13 +55,13 @@ sh 120-install-core-software*
 #sh 130-install-leftwm*
 #sh 150-install-chadwm*
 sh 160-install-bluetooth*
-sh 170-install-cups*
+#sh 170-install-cups*
 
 sh 200-software-AUR-repo*
 #sh 300-sardi-extra-icons-AUR-repo*
 #sh 310-sardi-mint-y-icons-AUR-repo*
 #sh 320-surfn-mint-y-icons-git-AUR-repo*
-sh 420-install-python-packages*
+#sh 420-install-python-packages*
 
 echo
 tput setaf 3
