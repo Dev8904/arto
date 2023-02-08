@@ -55,11 +55,11 @@ echo "################################################################"
 sudo cp  $installed_dir/settings/chadwm/sxhkd/sxhkdrc $HOME/.config/arco-chadwm/sxhkd/sxhkdrc
 sudo cp  $installed_dir/settings/chadwm/scripts/run.sh $HOME/.config/arco-chadwm/scripts/run.sh
 sudo cp  $installed_dir/settings/chadwm/scripts/bar.sh $HOME/.config/arco-chadwm/scripts/bar.sh
-sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson $HOME/.config/arco-chadwm/scripts/bar_themes/crimson
-sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h $HOME/.config/arco-chadwm/chadwm/config.def.hcp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson $HOME/.config/arco-chadwm/scripts/bar_themes/crimson
+sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson $HOME/.config/arco-chadwm/scripts/bar_themes
+sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h $HOME/.config/arco-chadwm/chadwm/config.def.h
 sudo cp  $installed_dir/settings/chadwm/chadwm/themes/crimson.h $HOME/.config/arco-chadwm/chadwm/themes/crimson.h
 
-cd ./.config/arco-chadwm/chadwm
+cd ~/.config/arco-chadwm/chadwm
 make
 sudo make install
 cd
