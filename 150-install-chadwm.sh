@@ -61,7 +61,7 @@ func_install_chadwm() {
     echo
 
     list=(
-    #alacritty
+    alacritty
     archlinux-logout-git
     edu-chadwm-git
     edu-skel-git
@@ -69,8 +69,8 @@ func_install_chadwm() {
     edu-xfce-git
     arcolinux-chadwm-pacman-hook-git
     arcolinux-paleofetch-git
-    arcolinux-wallpapers-candy-git
-    arcolinux-wallpapers-git
+    #arcolinux-wallpapers-candy-git
+    #arcolinux-wallpapers-git
     autorandr
     dash
     dmenu
@@ -94,7 +94,7 @@ func_install_chadwm() {
     xfce4-screenshooter
     xfce4-settings
     xfce4-taskmanager
-    xfce4-terminal
+    #xfce4-terminal
     )
 
     count=0

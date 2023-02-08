@@ -100,6 +100,12 @@ sudo pacman -Rs --noconfirm leafpad
 sudo pacman -Rs --noconfirm spectacle 
 sudo pacman -Rs --noconfirm vim
 sudo pacman -Rs --noconfirm codium
+sudo pacman -Rs --noconfirm xfce4-terminal
+sudo pacman -Rs --noconfirm urxvt-fullscreen
+sudo pacman -Rs --noconfirm rxvt-unicode
+sudo pacman -Rs --noconfirm fish
+
+
 
 
 # when on Arch Linux - remove conflicting files

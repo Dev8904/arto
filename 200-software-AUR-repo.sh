@@ -79,7 +79,9 @@ echo
 
 sh AUR/install-internxt*
 sh AUR/install-pulseaudio*
-
+yay -S --noconfirm --needed firefox-extension-bitwarden
+yay -S --noconfirm --needed firefox-ublock-origin
+yay -S --noconfirm --needed firefox-dark-reader
 
 # these come last always
 echo "Checking if icons from applications have a hardcoded path"

@@ -61,7 +61,7 @@ echo
 #sudo pacman -S --noconfirm --needed ttf-wps-fonts
 sudo pacman -S --noconfirm --needed wps-office
 sudo pacman -S --noconfirm --needed wps-office-mime
-sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
+#sudo pacman -S --noconfirm --needed adobe-source-sans-fonts
 sudo pacman -S --noconfirm --needed aic94xx-firmware
 sudo pacman -S --noconfirm --needed alacritty
 sudo pacman -S --noconfirm --needed alacritty-themes
@@ -95,17 +95,14 @@ sudo pacman -S --noconfirm --needed expac
 #sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
-yay -S --noconfirm --needed firefox-extension-bitwarden
-yay -S --noconfirm --needed firefox-ublock-origin
-yay -S --noconfirm --needed firefox-dark-reader
-sudo pacman -S --noconfirm --needed fish
+#sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed flameshot-git
 #sudo pacman -S --noconfirm --needed fluent-icon-theme-git
-sudo pacman -S --noconfirm --needed font-manager
+#sudo pacman -S --noconfirm --needed font-manager
 sudo pacman -S --noconfirm --needed galculator
 sudo pacman -S --noconfirm --needed gimp
 sudo pacman -S --noconfirm --needed git
-sudo pacman -S --noconfirm --needed gitahead-bin
+#sudo pacman -S --noconfirm --needed gitahead-bin
 sudo pacman -S --noconfirm --needed gitfiend
 #sudo pacman -S --noconfirm --needed gnome-disk-utility
 sudo pacman -S --noconfirm --needed gparted
@@ -117,7 +114,7 @@ sudo pacman -S --noconfirm --needed hardcode-fixer-git
 #sudo pacman -S --noconfirm --needed hddtemp
 sudo pacman -S --noconfirm --needed htop
 sudo pacman -S --noconfirm --needed hw-probe
-sudo pacman -S --noconfirm --needed inkscape
+#sudo pacman -S --noconfirm --needed inkscape
 #sudo pacman -S --noconfirm --needed insync
 sudo pacman -S --noconfirm --needed kvantum
 #sudo pacman -S --noconfirm --needed linux-firmware-qlogic
@@ -136,7 +133,7 @@ sudo pacman -S --noconfirm --needed network-manager-applet
 sudo pacman -S --noconfirm --needed networkmanager-openvpn
 #sudo pacman -S --noconfirm --needed nitrogen
 #sudo pacman -S --noconfirm --needed nomacs
-sudo pacman -S --noconfirm --needed noto-fonts
+#sudo pacman -S --noconfirm --needed noto-fonts
 #sudo pacman -S --noconfirm --needed ntp
 sudo pacman -S --noconfirm --needed nss-mdns
 sudo pacman -S --noconfirm --needed numlockx
@@ -157,7 +154,7 @@ sudo pacman -S --noconfirm --needed scrot
 #sudo pacman -S --noconfirm --needed sardi-icons
 sudo pacman -S --noconfirm --needed simplescreenrecorder
 sudo pacman -S --noconfirm --needed sparklines-git
-sudo pacman -S --noconfirm --needed speedtest-cli-git
+#sudo pacman -S --noconfirm --needed speedtest-cli-git
 #sudo pacman -S --noconfirm --needed screenkey
 #sudo pacman -S --noconfirm --needed spotify
 sudo pacman -S --noconfirm --needed squashfs-tools
@@ -192,9 +189,9 @@ sudo pacman -S --noconfirm --needed xcolor
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed xorg-xkill
 sudo pacman -S --noconfirm --needed yay-bin
-#sudo pacman -S --noconfirm --needed zsh
-#sudo pacman -S --noconfirm --needed zsh-completions
-#sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
+sudo pacman -S --noconfirm --needed zsh
+sudo pacman -S --noconfirm --needed zsh-completions
+sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 
@@ -212,11 +209,11 @@ sudo systemctl enable ntpd.service
 
  echo
   echo "################################################################"
-  echo "Setting up fish as default shell..."
+  echo "Setting up zsh as default shell..."
   echo "################################################################"
   echo
 
-
+  tozsh
 
 
 if [ ! -f /usr/share/xsessions/plasma.desktop ]; then
@@ -259,11 +256,11 @@ if [ -f /usr/share/xsessions/xfce.desktop ]; then
   tput sgr0
   echo
 
-  sudo pacman -S --noconfirm --needed menulibre
-  sudo pacman -S --noconfirm --needed mugshot
-  sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
-  sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
-  sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
+  #sudo pacman -S --noconfirm --needed menulibre
+  #sudo pacman -S --noconfirm --needed mugshot
+  #sudo pacman -S --noconfirm --needed prot16-xfce4-terminal
+  #sudo pacman -S --noconfirm --needed tempus-themes-xfce4-terminal-git
+  #sudo pacman -S --noconfirm --needed xfce4-terminal-base16-colors-git
 
 fi
 

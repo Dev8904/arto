@@ -43,6 +43,32 @@ echo
 [ -d $HOME"/.config/Kvantum" ] || mkdir -p $HOME"/.config/Kvantum"
 cp -r $installed_dir/settings/Kvantum/* $HOME/.config/Kvantum
 sudo cp -r $installed_dir/settings/Kvantum/* /etc/skel/.config/Kvantum
+
+if [ -f /usr/bin/chadwm ]; then
+
+echo "################################################################"
+echo "################### We are on chadwm"
+echo "################################################################"
+
+[ -d $HOME"/.config/arco-chadwm" ] || mkdir -p $HOME"/.config/arco-chadwm"
+
+sudo cp  $installed_dir/settings/chadwm/sxhkd/sxhkdrc $HOME/.config/arco-chadwm/sxhkd/sxhkdrc
+sudo cp  $installed_dir/settings/chadwm/scripts/run.sh $HOME/.config/arco-chadwm/scripts/run.sh
+sudo cp  $installed_dir/settings/chadwm/scripts/bar.sh $HOME/.config/arco-chadwm/scripts/bar.sh
+sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson $HOME/.config/arco-chadwm/scripts/bar_themes/crimson
+sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h $HOME/.config/arco-chadwm/chadwm/config.def.hcp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson $HOME/.config/arco-chadwm/scripts/bar_themes/crimson
+sudo cp  $installed_dir/settings/chadwm/chadwm/themes/crimson.h $HOME/.config/arco-chadwm/chadwm/themes/crimson.h
+
+cd ./.config/arco-chadwm/chadwm
+make
+sudo make install
+cd
+
+echo "################################################################"
+echo "################### Perosnal setings for chadwm set"
+echo "################################################################"
+
+else
 echo
 echo "To default xfce settings"
 echo
@@ -57,6 +83,7 @@ sudo cp  $installed_dir/settings/xfce/xsettings.xml /etc/skel/.config/xfce4/xfco
 sudo cp  $installed_dir/settings/xfce/xfce4-panel.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo cp  $installed_dir/settings/xfce/pointers.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo cp  $installed_dir/settings/xfce/displays.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+fi
 echo
 echo "To default gtk-3.0 config"
 echo
