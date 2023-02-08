@@ -1,4 +1,4 @@
-static const char black[]       = "#362a28";
+static const char black[]       = "#211e1e";
 static const char white[]       = "#bfacab";
 static const char gray2[]       = "#3a2e2e"; // unfocused window border
 static const char gray3[]       = "#625654";

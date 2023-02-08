@@ -80,7 +80,7 @@ static char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" }
 
 static const char* eww[] = { "eww", "open" , "eww", NULL };
 static const char* discord[] = { "discord", "open" , "discord", NULL };
-static const char* telegram[] = { "code", "open" , "code", NULL };
+static const char* code[] = { "code", "open" , "code", NULL };
 static const char* mintstick[] = { "mintstick", "-m", "iso", NULL};
 static const char* pavucontrol[] = { "pavucontrol", NULL };
 
