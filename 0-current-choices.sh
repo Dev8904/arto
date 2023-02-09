@@ -62,7 +62,7 @@ echo "We are chadwm"
 
 sh 400-remove-software*
 sh 120-install-core-software
-sh 200-software-AUR-repo*
+#sh 200-software-AUR-repo*
 sh 900-*
 sh 910-*
 sh 920-*
