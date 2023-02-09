@@ -77,7 +77,7 @@ echo "################################################################"
 tput sgr0
 echo
 
-#sh AUR/install-internxt*
+sh AUR/install-internxt*
 #sh AUR/install-pulseaudio*
 #sh AUR/firefox-extension-bitwarden
 #sh AUR/firefox-ublock-origin
