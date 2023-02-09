@@ -115,7 +115,7 @@ sh 970-archman*
 sh 970-arco*
 sh 970-ariser*
 sh 970-carli*
-sh 970-chadwm
+sh 970-chadwm*
 sh 970-eos*
 sh 970-garuda*
 sh 970-sierra*

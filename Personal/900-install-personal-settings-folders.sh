@@ -85,7 +85,7 @@ echo "Adding xorg xkill"
 echo
 [ -d /etc/X11/xorg.conf.d/ ] || mkdir -p /etc/X11/xorg.conf.d/
 sudo cp  settings/xorg/* /etc/X11/xorg.conf.d/
-sudo cp  $installed_dir/settings/alacritty/alacritty.yml* $HOME/.config/alacritty/alacritty.yml
+sudo cp  $installed_dir/settings/alacritty/alacritty.yml* etc/skel/.config/alacritty/alacritty.yml
 echo
 tput setaf 2
 echo "################################################################"
