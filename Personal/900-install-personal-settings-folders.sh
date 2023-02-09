@@ -85,6 +85,8 @@ echo "Adding xorg xkill"
 echo
 [ -d /etc/X11/xorg.conf.d/ ] || mkdir -p /etc/X11/xorg.conf.d/
 sudo cp  settings/xorg/* /etc/X11/xorg.conf.d/
+
+echo "Adding Alacritty Theme"
 sudo cp  $installed_dir/settings/alacritty/alacritty.yml* etc/skel/.config/alacritty/
 echo
 tput setaf 2
