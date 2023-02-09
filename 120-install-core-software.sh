@@ -68,7 +68,9 @@ sudo pacman -S --noconfirm --needed alacritty-themes
 sudo pacman -S --noconfirm --needed ark
 #sudo pacman -S --noconfirm --needed arandr
 #sudo pacman -S --noconfirm --needed arc-darkest-theme-git
-sudo pacman -S --noconfirm --needed arc-gtk-theme
+#sudo pacman -S --noconfirm --needed arc-gtk-theme
+sudo pacman -S --noconfirm --needed surfn-icons-git
+sudo pacman -S --noconfirm --needed orchis-theme-git
 sudo pacman -S --noconfirm --needed archiso
 #sudo pacman -S --noconfirm --needed asciinema
 sudo pacman -S --noconfirm --needed avahi
@@ -98,7 +100,7 @@ sudo pacman -S --noconfirm --needed expac
 #sudo pacman -S --noconfirm --needed feh
 sudo pacman -S --noconfirm --needed file-roller
 sudo pacman -S --noconfirm --needed firefox
-#sudo pacman -S --noconfirm --needed fish
+sudo pacman -S --noconfirm --needed fish
 sudo pacman -S --noconfirm --needed flameshot-git
 #sudo pacman -S --noconfirm --needed fluent-icon-theme-git
 #sudo pacman -S --noconfirm --needed font-manager
@@ -192,9 +194,9 @@ sudo pacman -S --noconfirm --needed xcolor
 sudo pacman -S --noconfirm --needed xdg-user-dirs
 sudo pacman -S --noconfirm --needed xorg-xkill
 sudo pacman -S --noconfirm --needed yay-bin
-sudo pacman -S --noconfirm --needed zsh
-sudo pacman -S --noconfirm --needed zsh-completions
-sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
+#sudo pacman -S --noconfirm --needed zsh
+#sudo pacman -S --noconfirm --needed zsh-completions
+#sudo pacman -S --noconfirm --needed zsh-syntax-highlighting
 sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 

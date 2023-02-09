@@ -79,8 +79,7 @@ echo
 
 sh AUR/install-internxt*
 sh AUR/firefox-extension-bitwarden*
-sh AUR/firefox-ublock-origin*
-sh AUR/firefox-dark-reader*
+sh AUR/notesnook-bin
 
 # these come last always
 echo "Checking if icons from applications have a hardcoded path"
