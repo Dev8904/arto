@@ -49,25 +49,25 @@ echo
 
 #sudo pacman -Syyu
 
-echo
-tput setaf 3
-echo "################################################################"
-echo "################### Checking if we are on chadwm"
-echo "################################################################"
-tput sgr0
-echo
-if [ -f /usr/bin/chadwm ]; then
+#echo
+#tput setaf 3
+#echo #"################################################################"
+#echo "################### Checking if we are on chadwm"
+#echo #"################################################################"
+#tput sgr0
+#echo
+#if [ -f /usr/bin/chadwm ]; then
 
-echo "We are chadwm"
+#echo "We are chadwm"
 
-sh 400-remove-software*
-sh 120-install-core-software*
-sh 200-software-AUR-repo*
-sh 900-*
-sh 910-*
-sh 920-*
+#sh 400-remove-software*
+#sh 120-install-core-software*
+#sh 200-software-AUR-repo*
+#sh 900-*
+#sh 910-*
+#sh 920-*
 
-else
+#else
 
 sh 400-remove-software*
 
@@ -105,7 +105,7 @@ sh 940-*
 sh 950-*
 
 sh 960-*
-fi
+#fi
 
 sh 970-all*
 

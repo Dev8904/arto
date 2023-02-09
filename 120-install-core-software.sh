@@ -90,6 +90,9 @@ sudo pacman -S --noconfirm --needed downgrade
 if [ ! -f /usr/bin/duf ]; then
   sudo pacman -S --noconfirm --needed duf
 fi
+if [ ! -f /usr/bin/pipewire ]; then
+  sudo pacman -S --noconfirm --needed pulseaudio-equalizer-ladspa
+fi
 #sudo pacman -S --noconfirm --needed evince
 sudo pacman -S --noconfirm --needed expac
 #sudo pacman -S --noconfirm --needed feh
