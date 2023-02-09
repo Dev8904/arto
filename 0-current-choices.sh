@@ -45,9 +45,9 @@ echo "################################################################"
 tput sgr0
 echo
 
-#echo "Updating..."
+echo "Updating..."
 
-#sudo pacman -Syyu
+sudo pacman -Syyu
 
 #echo
 #tput setaf 3
