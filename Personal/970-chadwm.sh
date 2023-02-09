@@ -21,7 +21,7 @@ sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson /etc/skel/.co
 sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h /etc/skel/.config/arco-chadwm/chadwm/
 sudo cp  $installed_dir/settings/chadwm/chadwm/themes/crimson.h /etc/skel/.config/arco-chadwm/chadwm/themes/
 
-rm /etc/skel/.config/arco-chadwm/chadwm/config.h
+sudo rm /etc/skel/.config/arco-chadwm/chadwm/config.h
 
 echo "Removing config.h"
 
