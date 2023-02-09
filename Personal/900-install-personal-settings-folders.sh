@@ -87,7 +87,7 @@ echo
 sudo cp  settings/xorg/* /etc/X11/xorg.conf.d/
 
 echo "Adding Alacritty Theme"
-sudo cp  $installed_dir/settings/alacritty/alacritty.yml* etc/skel/.config/alacritty/
+sudo cp  $installed_dir/settings/alacritty/alacritty.yml* etc/skel/.config/alacritty
 echo
 tput setaf 2
 echo "################################################################"
