@@ -44,32 +44,10 @@ echo
 cp -r $installed_dir/settings/Kvantum/* $HOME/.config/Kvantum
 sudo cp -r $installed_dir/settings/Kvantum/* /etc/skel/.config/Kvantum
 
-if [ -f /usr/bin/chadwm ]; then
-
 echo "################################################################"
-echo "################### We are on chadwm"
+echo "################### Perosnal setings for xfce"
 echo "################################################################"
-
-[ -d $HOME"/.config/arco-chadwm" ] || mkdir -p $HOME"/.config/arco-chadwm"
-
-sudo cp  $installed_dir/settings/chadwm/sxhkd/sxhkdrc /etc/skel/.config/arco-chadwm/sxhkd/
-sudo cp  $installed_dir/settings/chadwm/scripts/run.sh /etc/skel/.config/arco-chadwm/scripts/
-sudo cp  $installed_dir/settings/chadwm/scripts/bar.sh /etc/skel/.config/arco-chadwm/scripts/
-sudo cp  $installed_dir/settings/chadwm/scripts/bar_themes/crimson /etc/skel/.config/arco-chadwm/scripts/bar_themes
-sudo cp  $installed_dir/settings/chadwm/chadwm/config.def.h /etc/skel/.config/arco-chadwm/chadwm/
-sudo cp  $installed_dir/settings/chadwm/chadwm/themes/crimson.h /etc/skel/.config/arco-chadwm/chadwm/themes/
-
-rm /etc/skel/config/arco-chadwm/chadwm/config.h
-cd /etc/skel/.config/arco-chadwm/chadwm
-make
-sudo make install
-cd
-
-echo "################################################################"
-echo "################### Perosnal setings for chadwm set"
-echo "################################################################"
-
-else
+if [ -f /usr/share/xsessions/xfce.desktop ]; then
 echo
 echo "To default xfce settings"
 echo
@@ -84,6 +62,11 @@ sudo cp  $installed_dir/settings/xfce/xsettings.xml /etc/skel/.config/xfce4/xfco
 sudo cp  $installed_dir/settings/xfce/xfce4-panel.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo cp  $installed_dir/settings/xfce/pointers.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
 sudo cp  $installed_dir/settings/xfce/displays.xml /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml
+
+else
+
+echo "We are not on xfce"
+
 fi
 echo
 echo "To default gtk-3.0 config"
@@ -130,6 +113,7 @@ echo
 [ -d $HOME"/Clients" ] || mkdir -p $HOME"/Clients"
 [ -d $HOME"/Development/Projects/College Projects" ] || mkdir -p $HOME"/Development/Projects/College"
 [ -d $HOME"/Internxt" ] || mkdir -p $HOME"/Internxt"
+[ -d $HOME"/Torrents" ] || mkdir -p $HOME"/Torrents"
 
 echo
 tput setaf 2
