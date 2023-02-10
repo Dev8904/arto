@@ -206,7 +206,10 @@ else
 	echo
 
 fi
-
+echo "Installing Personal Firefox Settings"
+[ -d $HOME"/.mozilla/firefox/ns0zfclq.default-release/chrome" ] || mkdir -p $HOME"/.mozilla/firefox/ns0zfclq.default-release/chrome"
+sudo cp $installed_dir/settings/firefox/chrome/* ~/.mozilla/firefox/ns0zfclq.default-release/chrome
+sudo cp $installed_dir/settings/firefox/prefs/prefs.js* ~/.mozilla/firefox/ns0zfclq.default-release/
 echo
 tput setaf 6
 echo "################################################################"
