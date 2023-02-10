@@ -147,6 +147,9 @@ echo "Adding personal looks to /personal"
 echo
 sudo cp -arf ../Personal-iso/personal-iso/* /personal
 echo
+echo "Moving background to the right folder for SDDM"
+echo
+sudo cp  $installed_dir/settings/backgrounds/wallhaven-kwlk51.jpg /usr/share/backgrounds/archlinux-login-backgrounds/
 echo "Adding personal thunar to .config/thunar"
 echo
 [ -d $HOME"/.config/Thunar" ] || mkdir -p $HOME"/.config/Thunar"
