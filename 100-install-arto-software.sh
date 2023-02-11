@@ -31,22 +31,22 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 
 ##################################################################################################################
 
-#nemesis-repo added to /etc/pacman.conf
+#arto-repo added to /etc/pacman.conf
 
 echo
 tput setaf 3
 echo "################################################################"
-echo "################### nemesis"
+echo "################### arto"
 echo "################################################################"
 tput sgr0
 echo
 
-if grep -q nemesis_repo /etc/pacman.conf; then
+if grep -q arto_repo /etc/pacman.conf; then
 
   echo
   tput setaf 2
   echo "################################################################"
-  echo "################### nemesis_repo is already in /etc/pacman.conf"
+  echo "################### arto_repo is already in /etc/pacman.conf"
   echo "################################################################"
   tput sgr0
   echo
@@ -55,15 +55,15 @@ else
 
   tput setaf 2
   echo "################################################################"
-  echo "################### nemesis_repo added to /etc/pacman.conf"
+  echo "################### arto_repo added to /etc/pacman.conf"
   echo "################################################################"
   tput sgr0
 
 echo '
 
-[nemesis_repo]
+[arto_repo]
 SigLevel = Optional TrustedOnly
-Server = https://erikdubois.github.io/$repo/$arch' | sudo tee -a /etc/pacman.conf
+Server = https://dev8904.github.io/$repo/$arch' | sudo tee -a /etc/pacman.conf
 fi
 
 sudo pacman -Sy
@@ -71,7 +71,7 @@ sudo pacman -Sy
 echo
 tput setaf 2
 echo "################################################################"
-echo "################### Installing software from nemesis_repo"
+echo "################### Installing software from arto_repo"
 echo "################################################################"
 tput sgr0
 echo
