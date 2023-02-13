@@ -61,27 +61,25 @@ func_install_chadwm() {
     echo
 
     list=(
+    arto-chadwm-git
+    arto-system-git
+    arto-skel-git
     alacritty
     archlinux-logout-git
-    edu-chadwm-git
-    edu-skel-git
-    edu-system-git
+    #edu-chadwm-git
+    #edu-skel-git
+    #edu-system-git
     edu-xfce-git
     arcolinux-chadwm-pacman-hook-git
     arcolinux-paleofetch-git
     #arcolinux-wallpapers-candy-git
     #arcolinux-wallpapers-git
     autorandr
-    dash
     dmenu
-    eww
-    feh
     gvfs
     lolcat
     lxappearance
-    picom
     polkit-gnome
-    rofi
     rxvt-unicode
     sxhkd
     thunar

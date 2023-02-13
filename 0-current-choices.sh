@@ -44,18 +44,11 @@ echo "################### Start current choices"
 echo "################################################################"
 tput sgr0
 echo
-
+echo
 echo "Updating..."
-
+echo
+echo
 sudo pacman -Syyu
-
-#echo
-#tput setaf 3
-#echo #"################################################################"
-#echo "################### Checking if we are on chadwm"
-#echo #"################################################################"
-#tput sgr0
-#echo
 
 sh 400-remove-software*
 
