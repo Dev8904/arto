@@ -212,6 +212,26 @@ echo "Installing Personal Firefox Settings"
 sudo cp $installed_dir/settings/firefox/chrome/* ~/.mozilla/firefox/ns0zfclq.default-release/chrome
 sudo cp $installed_dir/settings/firefox/prefs/prefs.js* ~/.mozilla/firefox/ns0zfclq.default-release/
 echo
+echo
+if [ -f /usr/share/sddm/ ]; then
+echo "Installing Personal SDDM Settings"
+echo
+echo
+sudo cp $installed_dir/settings/sddm/hitmansddm.jpg /usr/share/sddm/themes/arcolinux-simplicity/images/
+sudo cp $installed_dir/settings/sddm/theme.conf.user /usr/share/sddm/themes/arcolinux-simplicity/
+echo
+echo "SDDM Settings added"
+fi
+echo "Checking For Missing User field"
+echo
+if grep -q "jonathan:x:1000:1000:jonathan:/home/jonathan:/bin/fish" /etc/passwd; then
+echo "No missing field"
+else
+	sudo usermod -c jonathan jonathan
+echo
+echo "Missing User Field Has Been Fixed"
+echo
+echo
 tput setaf 6
 echo "################################################################"
 echo "################### Done"
