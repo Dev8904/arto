@@ -207,13 +207,28 @@ else
 	echo
 
 fi
-echo "Installing Personal Firefox Settings"
-[ -d $HOME"/.mozilla/firefox/ns0zfclq.default-release/chrome" ] || mkdir -p $HOME"/.mozilla/firefox/ns0zfclq.default-release/chrome"
-sudo cp $installed_dir/settings/firefox/chrome/* ~/.mozilla/firefox/ns0zfclq.default-release/chrome
-sudo cp $installed_dir/settings/firefox/prefs/prefs.js* ~/.mozilla/firefox/ns0zfclq.default-release/
 echo
 echo
-if [ -f /usr/share/sddm/ ]; then
+if [ -d ~/.config/pulse/ ]; then
+echo
+echo
+echo "Installing Equalizer For Pulse Audio"
+echo
+[ -d $HOME"/.config/pulse/presets" ] || mkdir -p $HOME"/.config/pulse/presets"
+echo
+sudo cp $installed_dir/settings/pulseeq/presets/* ~/.config/pulse/presets/
+sudo cp $installed_dir/settings/pulseeq/equalizerrc.availablepresets ~/.config/pulse
+echo
+echo "Finished Installing Preset For Equalizer"
+echo
+else
+echo
+echo "Pulse Audio Not Installed"
+echo
+fi
+echo
+if [ -d /usr/share/sddm/ ]; then
+echo
 echo "Installing Personal SDDM Settings"
 echo
 echo
@@ -222,6 +237,8 @@ sudo cp $installed_dir/settings/sddm/theme.conf.user /usr/share/sddm/themes/arco
 echo
 echo "SDDM Settings added"
 fi
+echo
+echo
 echo "Checking For Missing User field"
 echo
 if grep -q "jonathan:x:1000:1000:jonathan:/home/jonathan:/bin/fish" /etc/passwd; then
@@ -230,7 +247,14 @@ else
 	sudo usermod -c jonathan jonathan
 echo
 echo "Missing User Field Has Been Fixed"
+fi
 echo
+echo
+echo "Installing Personal Firefox Settings"
+echo "*** MIGHT NOT WORK***"
+[ -d $HOME"/.mozilla/firefox/ns0zfclq.default-release/chrome" ] || mkdir -p $HOME"/.mozilla/firefox/ns0zfclq.default-release/chrome"
+sudo cp $installed_dir/settings/firefox/chrome/* ~/.mozilla/firefox/ns0zfclq.default-release/chrome
+sudo cp $installed_dir/settings/firefox/prefs/prefs.js* ~/.mozilla/firefox/ns0zfclq.default-release/
 echo
 tput setaf 6
 echo "################################################################"
