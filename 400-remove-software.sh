@@ -62,7 +62,7 @@ sudo pacman -Rs --noconfirm urxvt-perls
 sudo pacman -Rs --noconfirm urxvt-resize-font-git
 sudo pacman -Rs --noconfirm gitahead
 sudo pacman -Rs --noconfirm plank
-sudo pacman -Rs --noconfirm xcolor
+#sudo pacman -Rs --noconfirm xcolor
 sudo pacman -Rs --noconfirm peek
 sudo pacman -Rs --noconfirm inkscape
 sudo pacman -Rs --noconfirm risetretto
@@ -102,6 +102,7 @@ sudo pacman -Rs --noconfirm vim
 sudo pacman -Rs --noconfirm codium
 sudo pacman -Rs --noconfirm xfce4-terminal
 sudo pacman -Rs --noconfirm urxvt-fullscreen
+sudo pacman -Rs --noconfirm arcolinux-chadwm
 #sudo pacman -Rs --noconfirm rxvt-unicode
 #sudo pacman -Rs --noconfirm fish
 
